@@ -36,7 +36,6 @@ function fieldNames(obj) {
   for (let key in obj) {
         if (typeof obj[key] === 'number') {
             arrayOfValues.push(obj[key])
-            console.log(arrayOfValues)
         }
     }
     return arrayOfValues.sort(valuesCompare).reduce((resultArr, currentElem) => [ ...resultArr, getKeyValue(obj, currentElem) ], []);
