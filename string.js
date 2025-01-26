@@ -1,7 +1,7 @@
 //Замена первого символа строки на заглавный
 
 function appFirst(str) {
-    if (typeof string !== "string") {
+    if (typeof str !== "string") {
         return "Это не строка";
     }
   
