@@ -24,15 +24,14 @@ console.log(logger.getLogs());
 
 function createRandomGenerator(min, max) {
   return function () {
-    // Используем setTimeout для задержки в 5 секунд
     setTimeout(() => {
       // Генерируем случайное число в диапазоне от min до max
       const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
       console.log(randomNumber); // Выводим случайное число
-    }, 2000); // 5000 миллисекунд = 5 секунд
+    }, 2000);
   };
 }
 
 // Пример использования
 const randomGenerator = createRandomGenerator(1, 10);
-randomGenerator(); // Через 5 секунд выведет случайное число от 1 до 10
+randomGenerator();
